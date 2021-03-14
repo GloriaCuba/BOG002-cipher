@@ -25,9 +25,13 @@ btncopiar2.addEventListener("click", function () {
   document.execCommand("copy"); 
 })
 
+let btninicio= document.getElementById("btninicio");
+let descripcion= document.getElementById("descripcion");
+let divcifrar= document.getElementById("divcifrar");
+let divdescif= document.getElementById("divdescif");
 
 function mostrarcifrar() { 
-  btninicio.style.display = "none";
+ btninicio.style.display = "none";
  descripcion.style.display="none";
  divcifrar.style.display = "block";
   
@@ -51,11 +55,10 @@ function x() {
   let msmUsuario = document.getElementById("msm").value;
   let clave = parseInt(document.getElementById("clave").value);
 
-  let msmCifrado = cipher.cifrar(msmUsuario, clave);
+  let msmCifrado = cipher.encode(msmUsuario, clave);
   //console.log(msmCifrado);
   document.getElementById("resultado1").innerHTML = msmCifrado;
-  console.log(cipher);
-
+  /*console.log(cipher);*/
 }
 
 function y() {
@@ -63,7 +66,19 @@ function y() {
   let msmUsuario2 = document.getElementById("msm2").value;
   let clave2 = parseInt(document.getElementById("clave2").value);
 
-  let msmCifrado2 = cipher.descifrar(msmUsuario2, clave2);
+  let msmCifrado2 = cipher.decode(msmUsuario2, clave2);
   document.getElementById("resultado2").innerHTML = msmCifrado2;
-  console.log(cipher);
+  /*console.log(cipher);*/
 }
+const mostrardescrip = document.getElementById("descrip"),
+  overlay = document.getElementById("overlay"),
+  entendido = document.getElementById("entendido");
+
+mostrardescrip.addEventListener("click", function(){
+ overlay.classList.add('active');
+})
+
+entendido.addEventListener("click", function(){
+ overlay.classList.remove('active');
+}
+)

@@ -1,10 +1,10 @@
 //cipher es un objeto
 const cipher = {
-  cifrar,descifrar,
+  encode,decode,
 }
-function cifrar(msmUsuario, desplaz) {
+function encode(msmUsuario, clave) {
   let string = msmUsuario;
-  let offset = desplaz;
+  let offset = clave;
   let theChain = string.length - 1;
 
   var nuevaCadena = ""
@@ -20,13 +20,12 @@ function cifrar(msmUsuario, desplaz) {
     nuevaCadena = nuevaCadena + msmCodif;
     
   }
-  console.log(nuevaCadena);
   return nuevaCadena;
 }
 
-function descifrar(msmUsuario2, desplaz2) {
+function decode(msmUsuario2, clave2) {
   let string = msmUsuario2;
-  let offset = desplaz2;
+  let offset = clave2;
   let theChain = string.length - 1;
 
   var nuevaCadena = ""
@@ -39,11 +38,10 @@ function descifrar(msmUsuario2, desplaz2) {
    // }
       
     let msmCodif = String.fromCharCode(suma)
-    console.log(msmCodif)
     nuevaCadena = nuevaCadena + msmCodif;
     
   }
-  console.log(nuevaCadena);
+  /*console.log(nuevaCadena);*/
   return nuevaCadena;
 }
 

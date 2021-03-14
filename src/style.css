@@ -1,266 +1,320 @@
 body  {
-    background-image:url(https://s1.1zoom.me/big0/164/419272-Kycb.jpg);
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+  background-image:url(https://s1.1zoom.me/big0/164/419272-Kycb.jpg);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: black;
+}
+h1 {
+  -webkit-text-fill-color: white;
+  text-shadow: -3px -3px 2px #000;
+}
+/*Título*/
+.inicio {
+  color:white;
+  font-size: 30px;
+  font-family:Russo One;
+  display:flex;
+  justify-content:center;
   }
-  h1 {
-    -webkit-text-fill-color: white;
-    text-shadow: -3px -3px 2px #000;
+
+/*sección de los botones de inicio*/
+.btninicio {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.descripcion {
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 20px;
+}
+/*botones de inicio*/
+#descrip { 
+  width: 200px;
+  height: 70px ;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  background: rgb(1, 43, 1);
+  color: white;
+  font-family: Russo One;
+  font-size: 20px;
+}
+
+#descrip:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+#btniniciocifrar { 
+  width: 200px;
+  height: 200px ;
+  border-radius: 100px;
+  border: 2px solid rgb(4, 95, 34) ;
+  background: rgb(1, 43, 1);
+  color: white;
+  font-family: Russo One;
+  font-size: 30px;
+}
+
+#btniniciocifrar:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+#btniniciodescif  { 
+  width: 200px;
+  height: 200px ;
+  border-radius: 100px;
+  border: 2px solid rgb(4, 95, 34) ;
+  background: rgb(1, 43, 1);
+  color: white;
+  font-family: Russo One;
+  font-size: 30px;
+}  
+
+#btniniciodescif:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+/*div sección de cifrar y descifrar*/
+.cifrarydescif {
+  display: none;
+  width: 440px;
+  margin: auto;
+ }
+ /*formulario*/
+.contenedor1 {
+  font-family: Aldrich;
+  color:white;
+  font-size: 17px; 
+  width: 440px;
+  display: flex;
+}
+.contenedor2{
+  display: flex;
+  width: 310px;
+  background-color: rgb(4, 95, 34);
+  opacity: 80%; 
+  align-items: center;
+  justify-content: space-between;
+}
+.contenedor3{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+.contenedor4{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  justify-content: space-between;
+}
+.contenedor5{
+  display: flex;
+  width: 310px;
+  background: rgb(4, 95, 34);
+  opacity: 80%; 
+  border: 2px solid rgb(31, 185, 82);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#labelmsm {
+  background: rgb(4, 95, 34);
+  opacity: 80%;
+  display:flex;
+  width: 440px;
+  height: 30px;
+  justify-content: center;
+}
+
+ #msm{
+   font-family: Aldrich;
+   color:rgb(39, 197, 0);
+   width: 436px;
+   height: 100px;
+   border: 2px solid rgb(4, 95, 34);
+   padding: 20px;
+ }
+ #msm2{
+   font-family: Aldrich;
+   color:rgb(39, 197, 0);
+   width: 436px;
+   height: 100px;
+   border: 2px solid rgb(4, 95, 34);
+   padding: 20px;
+ }
+  .labelclave {
+  padding-left: 4px;
+  border:2px solid rgb(4,95,34);
   }
-  /*Título*/
-  .inicio {
-    color:white;
-    font-size: 30px;
-    font-family:Russo One;
-    display:flex;
-    justify-content:center;
-    }
+
+ #clave{
+   width: 130px;
+   height: 25px;
+   border: 2px solid rgb(4, 95, 34);
+   border-radius: 5px; 
   
-  /*sección de los botones de inicio*/
-  .btninicio {
-    display: flex;
-    justify-content:space-evenly;
-  }
-  
-  /*botones de inicio*/
-  #btniniciocifrar { 
-    width: 200px;
-    height: 200px ;
-    border-radius: 100px;
-    border: 2px solid rgb(4, 95, 34) ;
-    background: rgb(1, 43, 1);
-    color: white;
-    font-family: Russo One;
-    font-size: 30px;
-  }
-  
-  #btniniciocifrar:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-  #btniniciodescif  { 
-    width: 200px;
-    height: 200px ;
-    border-radius: 100px;
-    border: 2px solid rgb(4, 95, 34) ;
-    background: rgb(1, 43, 1);
-    color: white;
-    font-family: Russo One;
-    font-size: 30px;
-  }  
-  
-  #btniniciodescif:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-  /*div sección de cifrar y descifrar*/
-  .cifrarydescif {
-    display: none;
-    width: 440px;
-    margin: auto;
-   }
-   /*formulario*/
-  .contenedor1 {
-    font-family: Aldrich;
-    color:white;
-    font-size: 17px; 
-    width: 440px;
-    display: flex;
-  }
-  .contenedor2{
-    display: flex;
-    width: 310px;
-    background-color: rgb(4, 95, 34);
-    opacity: 80%; 
-    align-items: center;
-    justify-content: space-between;
-  }
-  .contenedor3{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-  }
-  .contenedor4{
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-    justify-content: space-between;
-  }
-  .contenedor5{
-    display: flex;
-    width: 310px;
-    background: rgb(4, 95, 34);
-    opacity: 80%; 
-    border: 2px solid rgb(31, 185, 82);
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #labelmsm {
-    background: rgb(4, 95, 34);
-    opacity: 80%;
-    display:flex;
-    width: 440px;
-    height: 30px;
-    justify-content: center;
-  }
-  
-   #msm{
-     font-family: Aldrich;
-     color:rgb(39, 197, 0);
-     width: 436px;
-     height: 100px;
-     border: 2px solid rgb(4, 95, 34);
-     /*padding: 20px;*/
-   }
-   #msm2{
-     font-family: Aldrich;
-     color:rgb(39, 197, 0);
-     width: 436px;
-     height: 100px;
-     border: 2px solid rgb(4, 95, 34);
-     /*padding: 20px;*/
-   }
-    .labelclave {
-    padding-left: 4px;
-    border:2px solid rgb(4,95,34);
-    }
-  
-   #clave{
-     width: 130px;
-     height: 25px;
-     border: 2px solid rgb(4, 95, 34);
-     border-radius: 5px; 
-    
-   }
-    #clave2{
-     width: 130px;
-     height: 25px;
-     border: 2px solid rgb(4, 95, 34);
-     border-radius: 5px; 
-     
-   }
-  
-   #btncif{
-    font-family: Russo One;
-    border-radius: 5px;
-    border: 2px solid rgb(4, 95, 34) ;
-    width: 80px;
-    height: 32px;
-    background: rgb(1, 43, 1);
-    color: white;
-   }
-  
-  #btncif:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-   #btndescif{
-    font-family: Russo One;
-    border-radius: 5px;
-    border: 2px solid rgb(4, 95, 34) ;
-    width: 80px;
-    height: 32px;
-    background: rgb(1, 43, 1);
-    color: white;
-  
-   }
-  
-  #btndescif:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-  /*parrafo, espacio en el que aparece la respuesta*/
-  .resultado{
-    font-family: Aldrich;
-    color:rgb(39, 197, 0);
-    width: 306px;
-    min-height: 100px;
-    word-wrap: break-word;
-    background: white;
-    border: 2px solid rgb(4, 95, 34);
-  }
-  /*parrafo, espacio en el que aparece la respuesta*/
-  .resultado2{
-    font-family: Aldrich;
-    color:rgb(39, 197, 0);
-    width: 306px;
-    min-height: 100px;
-    word-wrap: break-word;
-    background: white;
-    border: 2px solid rgb(4, 95, 34);
-  }
-  /*botones de cifrar y descifrar nuevamente y botones de ir al inicio*/
-  .btnreset{
-    font-family: Russo One;
-    border: 2px solid rgb(4, 95, 34) ;
-    width: 100px;
-    height: 50px;
-    background: rgb(1, 43, 1);
-    color: white;
-   }
-  .btnreset:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-  .labelbtncopiar {
-    font-size: 11px;
-    padding-left: 4px;
-  }
-  
-  #btncopiar{
-    font-family: Russo One;
-    border-radius: 5px;
-    border: 2px solid rgb(4, 95, 34) ;
-    width: 80px;
-    height: 32px;
-    background: rgb(1, 43, 1);
-    color: white; 
-   }
-  
-  #btncopiar:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  #btncopiar2{
-    font-family: Russo One;
-    border-radius: 5px;
-    border: 2px solid rgb(4, 95, 34) ;
-    width: 80px;
-    height: 32px;
-    background: rgb(1, 43, 1);
-    color: white; 
-   }
-  
-  #btncopiar2:hover {
-    border: 2px solid rgb(4, 157, 168) ;
-    background: rgb(2, 77, 95);
-    color: white;
-  }
-  
-  .descripcion{
-    display: flex;
-    margin-top: 160px;
-    margin-left: 260px;
-    margin-right: 260px;
-    color: white;
-    background: rgb(1, 43, 1);
-    opacity: 70%; 
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .descripcion p {
-    opacity: unset;
-  }
+ }
+  #clave2{
+   width: 130px;
+   height: 25px;
+   border: 2px solid rgb(4, 95, 34);
+   border-radius: 5px; 
+   
+ }
+
+ #btncif{
+  font-family: Russo One;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 80px;
+  height: 32px;
+  background: rgb(1, 43, 1);
+  color: white;
+ }
+
+#btncif:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+ #btndescif{
+  font-family: Russo One;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 80px;
+  height: 32px;
+  background: rgb(1, 43, 1);
+  color: white;
+
+ }
+
+#btndescif:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+/*parrafo, espacio en el que aparece la respuesta*/
+.resultado{
+  font-family: Aldrich;
+  color:rgb(39, 197, 0);
+  width: 306px;
+  min-height: 100px;
+  word-wrap: break-word;
+  background: white;
+  border: 2px solid rgb(4, 95, 34);
+  padding: 2%;
+}
+/*parrafo, espacio en el que aparece la respuesta*/
+.resultado2{
+  font-family: Aldrich;
+  color:rgb(39, 197, 0);
+  width: 306px;
+  min-height: 100px;
+  word-wrap: break-word;
+  background: white;
+  border: 2px solid rgb(4, 95, 34);
+  padding: 2%;
+}
+/*botones de cifrar y descifrar nuevamente y botones de ir al inicio*/
+.btnreset{
+  font-family: Russo One;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 100px;
+  height: 50px;
+  background: rgb(1, 43, 1);
+  color: white;
+ }
+.btnreset:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+.labelbtncopiar {
+  font-size: 11px;
+  padding-left: 4px;
+}
+
+#btncopiar{
+  font-family: Russo One;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 80px;
+  height: 32px;
+  background: rgb(1, 43, 1);
+  color: white; 
+ }
+
+#btncopiar:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+#btncopiar2{
+  font-family: Russo One;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 80px;
+  height: 32px;
+  background: rgb(1, 43, 1);
+  color: white; 
+ }
+
+#btncopiar2:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0,.5);
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.instruccion {
+  background: white;
+  box-shadow: 0px 0px 5px 0px black;
+  border-radius: 5px;
+  font-family: Helvetica;
+  padding: 20px;
+  text-align: justify;
+  width: 500px;
+}
+
+#entendido{
+  font-family: Russo One;
+  border-radius: 5px;
+  border: 2px solid rgb(4, 95, 34) ;
+  width: 100px;
+  height: 32px;
+  background: rgb(1, 43, 1);
+  color: white; 
+ }
+
+#entendido:hover {
+  border: 2px solid rgb(4, 157, 168) ;
+  background: rgb(2, 77, 95);
+  color: white;
+}
