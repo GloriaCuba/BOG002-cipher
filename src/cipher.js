@@ -6,9 +6,12 @@ function encode(msmUsuario, clave) {
   let string = msmUsuario;
   let offset = clave;
   let theChain = string.length - 1;
+  var nuevaCadena = "";
 
-  var nuevaCadena = ""
+  if (string===""|| string===0 ||offset===0 ||offset==="" ||offset===null) {
+    throw new TypeError();
 
+}
   for (let recor = 0; recor <= theChain; recor++) {
     let ascii = string.charCodeAt(recor);
     let suma = ascii + offset;
@@ -27,9 +30,12 @@ function decode(msmUsuario2, clave2) {
   let string = msmUsuario2;
   let offset = clave2;
   let theChain = string.length - 1;
-
   var nuevaCadena = ""
+  
+  if (string===""|| string===0 ||offset===0 ||offset==="" ||offset===null) {
+    throw new TypeError();
 
+  }
   for (let recor = 0; recor <= theChain; recor++) {
     let ascii = string.charCodeAt(recor);
     let suma = ascii - offset;

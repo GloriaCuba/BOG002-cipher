@@ -50,25 +50,37 @@ btncif.addEventListener("click", x);
 const btndescif = document.getElementById("btndescif");
 btndescif.addEventListener("click", y);
 
+
+
 function x() {
   event.preventDefault()
   let msmUsuario = document.getElementById("msm").value;
   let clave = parseInt(document.getElementById("clave").value);
-
+try {
   let msmCifrado = cipher.encode(msmUsuario, clave);
   //console.log(msmCifrado);
   document.getElementById("resultado1").innerHTML = msmCifrado;
   /*console.log(cipher);*/
+  }
+catch(TypeError){
+  alert("Ingrese todos los campos");
 }
+}
+
 
 function y() {
   event.preventDefault()
   let msmUsuario2 = document.getElementById("msm2").value;
   let clave2 = parseInt(document.getElementById("clave2").value);
-
+try {
+  
   let msmCifrado2 = cipher.decode(msmUsuario2, clave2);
   document.getElementById("resultado2").innerHTML = msmCifrado2;
   /*console.log(cipher);*/
+}
+catch(TypeError){
+  alert("Ingrese todos los campos");
+}
 }
 const mostrardescrip = document.getElementById("descrip"),
   overlay = document.getElementById("overlay"),
