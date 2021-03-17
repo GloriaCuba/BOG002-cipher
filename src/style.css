@@ -117,7 +117,7 @@ h1 {
 }
 .contenedor5{
   display: flex;
-  width: 310px;
+  width: 350px;
   background: rgb(4, 95, 34);
   opacity: 80%; 
   border: 2px solid rgb(31, 185, 82);
@@ -125,14 +125,15 @@ h1 {
   justify-content: space-between;
 }
 
-#labelmsm {
+.labelmsm {
   background: rgb(4, 95, 34);
   opacity: 80%;
   display:flex;
-  width: 440px;
+  width: 478px;
   height: 30px;
   justify-content: center;
 }
+
 
  #msm{
    font-family: Aldrich;
@@ -207,7 +208,7 @@ h1 {
 .resultado{
   font-family: Aldrich;
   color:rgb(39, 197, 0);
-  width: 306px;
+  width: 346px;
   min-height: 100px;
   word-wrap: break-word;
   background: white;
@@ -218,7 +219,7 @@ h1 {
 .resultado2{
   font-family: Aldrich;
   color:rgb(39, 197, 0);
-  width: 306px;
+  width: 346px;
   min-height: 100px;
   word-wrap: break-word;
   background: white;
@@ -297,7 +298,8 @@ h1 {
   background: white;
   box-shadow: 0px 0px 5px 0px black;
   border-radius: 5px;
-  font-family: Helvetica;
+  font-family: Aldrich;
+  font-size: 20px;
   padding: 20px;
   text-align: justify;
   width: 500px;

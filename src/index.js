@@ -50,8 +50,6 @@ btncif.addEventListener("click", x);
 const btndescif = document.getElementById("btndescif");
 btndescif.addEventListener("click", y);
 
-
-
 function x() {
   event.preventDefault()
   let msmUsuario = document.getElementById("msm").value;
