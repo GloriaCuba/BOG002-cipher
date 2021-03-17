@@ -15,48 +15,43 @@
 	<div class="inicio" id="inicio">
 		<h1>xiphER</h1>
 	</div>
-
-	
     <div class="descripcion" id="descripcion">
-    <button type="button" class="descrip" id="descrip">Instrucciones</button>
+      <button type="button" class="descrip" id="descrip">Instrucciones</button>
     <div class="overlay" id="overlay">
       <div class="instruccion" id="instruccion">
         <p><strong>¡Bienvenido a xiPHER!</strong>.Esta aplicación está basada en el Cifrado César. uno de los primeros métodos de cifrado conocidos históricamente. Julio César lo usó para enviar órdenes a sus generales en los campos de batalla. Consistía en escribir el mensaje con un alfabeto latino al cual se le desplazaba un numero de posiciones especifico mediante un algoritmo. En aquella época, el receptor del mensaje ya conocía el código para descubrir el mensaje, una característica importante para cifrar y descifrar el mensaje correctamente. <br>
           Para usar esta App debes seguir los siguientes pasos:<br> 1. Haz click en el botón <strong>Quiero Cifrar</strong>.<br>2. Escribe el mensaje a cifrar. <br>3.Escribe la clave que será el desplazamiento que tendrá tu mensaje, y haz click en cifrar. No hay un código secreto único o específico, sólo debe cumplir dos condiciones: Debe ser un número de uno o de varios dígitos, y positivo o negativo<br>4.Copia el mensaje cifrado y ¡descífralo!, también puedes compartirlo. <br>
           <strong>Tip:  No olvides que la clave para cifrar y descifrar el mensaje debe ser la misma.</strong>
-        </p>
-          
-    <button type="button" class="entendido" id="entendido">Entendido</button>
+        </p>    
+        <button type="button" class="entendido" id="entendido">Entendido</button>
       </div>
     </div>
-  
-	</div>
+  </div>
   
   <div class="btninicio" id="btninicio">
 		<button  type="button" id="btniniciocifrar">Quiero cifrar</button>
     <button type="button" id="btniniciodescif">Quiero descifrar</button>
   </div>
 
-
   <div class="cifrarydescif" id="divcifrar" >
     <div class="contenedor1">
       <form >
       <label class= "labelmsm" for="msm" >Ingresa el mensaje a Cifrar</label>
-        <input type="text" id="msm">
+      <input type="text" id="msm">
       <br>
-      <div class="contenedor2">
-        <label class="labelclave" for="clave">Clave</label>
-        <input type="number" id="clave">
-        <button id="btncif" >Cifrar</button>
-      </div>
-      <br>
+        <div class="contenedor2">
+          <label class="labelclave" for="clave">Clave</label>
+          <input type="number" id="clave">
+          <button id="btncif" >Cifrar</button>
+        </div>
+        <br>
         <div class="contenedor3">
           <textarea class="resultado" id="resultado1"></textarea>
           <div class="contenedor4">
-            <button type ="reset" class="btnreset">Cifrar Nuevamente</button>
-            <button class="btnreset">Inicio</button>
-          </div>
+          <button type ="reset" class="btnreset">Cifrar Nuevamente</button>
+          <button class="btnreset">Inicio</button>
         </div>
+    </div>
       <div class="contenedor5">
         <label class="labelbtncopiar" for="btncopiar">Realiza una copia del mensaje para descifrarlo o compartirlo</label>
         <button class="btncopiar" id="btncopiar">Copiar</button>
@@ -71,19 +66,19 @@
       <label class= "labelmsm" for="msm2">Ingresa el mensaje a Descifrar</label>
       <input type="text" id="msm2">
       <br>
-      <div class="contenedor2">
-        <label class="labelclave" for="clave2">Clave</label>
-        <input type="number" id="clave2">
-        <button id="btndescif" >Descifrar </button>
-      </div>
-      <br>
-      <div class="contenedor3">
-        <textarea class="resultado2" id="resultado2"></textarea>
-        <div class="contenedor4">
+        <div class="contenedor2">
+          <label class="labelclave" for="clave2">Clave</label>
+          <input type="number" id="clave2">
+          <button id="btndescif" >Descifrar </button>
+        </div>
+        <br>
+        <div class="contenedor3">
+          <textarea class="resultado2" id="resultado2"></textarea>
+          <div class="contenedor4">
           <button type ="reset" class="btnreset">Descifrar Nuevamente</button>
           <button class="btnreset">Inicio</button>
         </div>
-      </div>
+    </div>
       <div class="contenedor5">
         <label class="labelbtncopiar" for="btncopiar2">Realiza una copia del mensaje para compartirlo</label>
         <button class="btncopiar2" id="btncopiar2">Copiar</button>
@@ -92,6 +87,6 @@
     </div>   
   </div>
 
-    <script src="index.js" type="module"></script>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
